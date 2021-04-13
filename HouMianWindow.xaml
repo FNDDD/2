@@ -1,0 +1,40 @@
+﻿<Window x:Class="Client.HouMianWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+         WindowStyle="None"
+        Title="HouMianWindow" Height="768" Width="1366">
+    <Grid>
+        <Grid>
+            <ListView Name="Goods_Info" BorderThickness="0,1,1,1" HorizontalAlignment="Left" Height="571" Margin="48,119,0,0" VerticalAlignment="Top" Width="330"  Background="White" FontSize="20">
+
+                <ListViewItem Name="Cope1" BorderThickness="0" Content="青菜" Margin="0" Height="25" FontSize="18" Visibility="Hidden"/>
+                <ListViewItem Name="Cope2" BorderThickness="0,0,0,1" Content="青菜" Margin="0" Height="25" FontSize="18" Visibility="Hidden" BorderBrush="White"/>
+
+            </ListView>
+            <ListView  Name="Num_XvHao" HorizontalAlignment="Left" Height="571" Margin="0,118,0,0" VerticalAlignment="Top" Width="49" BorderThickness="1,1,0,1">
+
+                <ListViewItem Name="Cope3" BorderThickness="0,0,0,1" Content="  1" Margin="0" Height="50" FontSize="20" Background="#FFFDFDFD" BorderBrush="#FF030000" Visibility="Hidden">
+
+                </ListViewItem>
+            </ListView>
+
+            <Label Content="合计：" HorizontalAlignment="Left" Margin="104,701,0,0" VerticalAlignment="Top" Width="68" Height="41" FontSize="24"/>
+            <Label Name="Sum" Content="￥" HorizontalAlignment="Left" Margin="187,696,0,0" VerticalAlignment="Top" Height="56" Width="178" FontSize="36" Foreground="#FFFF0303" FontWeight="Bold"/>
+            <Grid HorizontalAlignment="Left" Height="120" Margin="0,0,0,0" VerticalAlignment="Top" Width="380">
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF34BF72" Offset="0"/>
+                        <GradientStop Color="#FF039443" Offset="1"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Image Source="/PIC/BeiMian/logo  拷贝.png" HorizontalAlignment="Left" Height="37" Margin="12,7,0,0" VerticalAlignment="Top" Width="154"/>
+                <Image Source="/PIC/BeiMian/组 13.png" HorizontalAlignment="Left" Height="40" Margin="84,58,0,0" VerticalAlignment="Top" Width="212"/>
+            </Grid>
+            <Image x:Name="GuangGao" Source="/PIC/BeiMian/矩形 521.png" HorizontalAlignment="Left" Height="768" Margin="380,0,0,0" VerticalAlignment="Top" Width="976" Stretch="Fill"/>
+        </Grid>
+    </Grid>
+</Window>

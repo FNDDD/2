@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Client.SelfKJ.Testself"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Client.SelfKJ"
+             mc:Ignorable="d" 
+             d:DesignHeight="180" d:DesignWidth="800">
+    <Grid Background="White">
+        <DataGrid HorizontalAlignment="Left" Height="121" Margin="1,55,0,0" VerticalAlignment="Top" Width="794">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Type}" Header="订单类型" Width="120"/>
+                <DataGridTextColumn Binding="{Binding Code}" Header="订单编号" Width="140"/>
+                <DataGridTextColumn Binding="{Binding Name}" Header="会员名" Width="100"/>
+                <DataGridTextColumn Binding="{Binding Phone}" Header="会员电话" Width="120"/>
+                <DataGridTextColumn Binding="{Binding Price}" Header="实付金额" Width="100"/>
+                <DataGridTextColumn Binding="{Binding Dateti}" Header="配送日期" Width="160"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="2021-03-23    订单" HorizontalAlignment="Left" Margin="11,24,0,0" VerticalAlignment="Top" Width="236"/>
+
+    </Grid>
+</UserControl>

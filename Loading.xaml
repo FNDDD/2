@@ -1,0 +1,36 @@
+﻿<Window x:Class="Client.Loading"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+         WindowStyle="None"
+         Left="0" Top="0"
+       Title="" FontStyle="Italic"  Height="768" Width="1366"  HorizontalContentAlignment="Center" Margin="0,0,0,0" FontSize="22" >
+    <Grid Margin="0,0,0,0" HorizontalAlignment="Center" Width="1366">
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Image Margin="317,120,330,102.6" Source="/PIC/black1.png" Height="521"  Width="745">
+            <Image.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF340606" Offset="1"/>
+                </LinearGradientBrush>
+            </Image.OpacityMask>
+        </Image>
+        <Grid HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="1366" Margin="0,0,0,0">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#34BF72" Offset="0"/>
+                    <GradientStop Color="#039443" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+
+            <Label Content="门店库存数据加载" HorizontalAlignment="Left" Margin="608,25,0,0" VerticalAlignment="Top" Width="241" FontStyle="Normal" Foreground="#FFF7F7F7" FontSize="28" FontWeight="Bold"/>
+            <Image HorizontalAlignment="Left" Source="PIC/logo @2x.png" Height="56" Margin="20,12,0,0" VerticalAlignment="Top" Width="199"/>
+        </Grid>
+        <ProgressBar Name="ProgressBar_Load" HorizontalAlignment="Left" Height="20" Margin="151,688,0,0" VerticalAlignment="Top" Width="1000" Foreground="#FF4A9C59" />
+    </Grid>
+</Window>

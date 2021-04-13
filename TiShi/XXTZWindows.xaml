@@ -1,0 +1,22 @@
+﻿<Window x:Class="Client.TiShi.XXTZWindows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client.TiShi"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Left="1026" Top="486"
+        Title="XXTZWindows" Height="282" Width="340">
+    <Grid>
+        <Image Source="/PIC/TiShi/XiaoXiTongZhi.png" HorizontalAlignment="Left" Height="163" Margin="84,66,0,0" VerticalAlignment="Top" Width="189">
+
+        </Image>
+        <Label Name="Title_Text" MouseLeftButtonDown="ToXiaoXiTongZhi" Content="您有新的订单请查看>>" HorizontalAlignment="Left" Margin="1,236,0,0" VerticalAlignment="Top" Width="328" Background="White" Foreground="#08964E" FontSize="22" HorizontalContentAlignment="Center"/>
+        <Grid MouseLeftButtonDown="Close_Windows" HorizontalAlignment="Left" Height="50" Margin="-1,-1,-0.4,0" VerticalAlignment="Top" Width="335" Background="#058840">
+            <Label Content="消息通知" HorizontalAlignment="Left" Margin="108,4,0,0" VerticalAlignment="Top" Width="141" FontSize="22" Foreground="#FFF3F3F3"/>
+            <Label MouseLeftButtonDown="Close_Windows" Content="X" HorizontalAlignment="Left" Margin="302,2,0,0" VerticalAlignment="Top" Height="36" Width="28" FontSize="23" Foreground="White"/>
+        </Grid>
+
+    </Grid>
+</Window>
